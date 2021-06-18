@@ -7,7 +7,7 @@ pagination:
     alias: blogs
 
 ---
-[//]: # "the blog comes from the name of the tag we created in 11tydata.js and the data.title is cause we are grabbing front matter"
+[//]: # "THIS WAS BEFORE PAGINATION. the blog comes from the name of the tag we created in 11tydata.js and the data.title is cause we are grabbing front matter"
 
 {% for blog in blogs %}
 - [{{blog.data.title}}]({{blog.url}})
