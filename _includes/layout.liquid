@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="eng">
+<body>
+    <header>
+        <a href="/">My 11ty Site!</a>
+    </header>
+    <main>
+
+    {% if title %}<h1>{{title}}</h1>{% endif %}
+
+{% comment %}
+the above is just using markdown syntax
+
+the below is using liquid syntax, but it's grabbing the dog from the API call we created in the 11tydata.js
+{% endcomment %}
+
+    {%- if dog %}
+    <img src="{{dog}}" alt="a good doggo" />
+    {%- endif %}
+
+
+    {{content}}
+    </main>
+</body>
+</html>
